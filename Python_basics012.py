@@ -4,7 +4,7 @@
 #is optional in javascript
 from json import JSONDecoder
 
-#console.log(2+2)
+#console.log(2+2)000
 #console.log(2-2)
 #console.log(2*2)
 #console.log(2/2)
@@ -14,7 +14,7 @@ from json import JSONDecoder
 #var age=45
 #age =age+1
 #console.log (age)
-#object ->dict -#(key and valu )
+#object ->dict -#(key and value)
  # var* object={
 # name:("pramod")
 #age: 99}
