@@ -2,7 +2,7 @@ for i in range(0, 10, 1):  # 0 to 9
     if i == 6 or i == 5:
         print(i)
     else:
-        pass  # pass is a place holder statement that does nothing
+        pass  # pass is a placeholder statement that does nothing
     # its used when a statement is syntactically required but no action needed
 
     # / i / condition / o/p
