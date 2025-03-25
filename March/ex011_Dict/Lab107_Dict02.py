@@ -26,12 +26,12 @@ student_information1 = {
     }
 }
 
-student_information={
+student_information2={
     "name": "sonu" ,
     #"age": 29,
     "age": 50,
         "address" : {
-    "address": "goa",
+    " Home_address": "goa",
     "office_address": "pune"
 }
 
