@@ -1,7 +1,7 @@
 class Person:
 
 
-def __init__(self):
+   def __init__(self):
     print("I will be called")
     self.name = input("Enter the name\n")
     self.age = input("Enter the age\n")
@@ -15,4 +15,4 @@ def __init__(self):
 
 
         person1 = Person( )
-        person1.name_of_the_function_to_display()
+        person1.name_of_the_function_to_display( )
