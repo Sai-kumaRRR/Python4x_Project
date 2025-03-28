@@ -13,6 +13,6 @@ char_char = {}
 # O/P -> dict # { a : 2 , u : 1 , t : 2 , o : 2 , m : 1 , n : 1 , i : 1 , n : 1 }
 
 for char in String:
-    char_count[char] = char_count.get(char, 0)+1
+    char[char] = char.get(char, 0)+1
 
     print(char)

@@ -1,6 +1,6 @@
 class Person:
 
-    def __init__(selfself, name):
+    def __init__(selfself, name, self=None):
         self.name = name
 
         def walk(self):
@@ -12,5 +12,5 @@ class Person:
         print(amit.name)
         print(sai.name)
 
-    print("who is walking", 'amit'.walk())
-    print("who is walking", 'sai'.walk())
+    print("who is walking", 'amit')
+    print("who is walking", 'sai')
