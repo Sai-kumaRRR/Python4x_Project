@@ -14,7 +14,7 @@ class VWOLoginPage:
             else:
                 print("Allowed , Login Success")
 
-            email = input("Enter the email \n")
+            email = input('Enter the email \n')
             password = input('enter the password \n')
 
             vwo_obj = VWOLoginPage(email, password)
