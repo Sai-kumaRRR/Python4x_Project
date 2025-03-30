@@ -1,6 +1,7 @@
 # Web automation - selenium
 # page - you are going automate
 
+
 class VWOLoginPage:
 
     def __init__(self, email_arg, password_arg):
@@ -14,8 +15,11 @@ class VWOLoginPage:
             else:
                 print("Allowed , Login Success")
 
-            email = input('Enter the email \n')
-            password = input('enter the password \n')
+        email = input("Enter the email \n")
+        password = input('enter the password \n')
 
-            vwo_obj = VWOLoginPage(email, password)
-            vwo_obj.login_confirm()
+        vwo_obj = VWOLoginPage(email, password)
+        vwo_obj.login_confirm()
+
+        sai: VWOLoginPage = VWOLoginPage("saikumar143@gmail.com", "Pass143")
+        sai.login_confirm()
