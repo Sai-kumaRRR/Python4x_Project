@@ -1,0 +1,1 @@
+print(int("a")) # value error : invalid for int() with base 10: 'a'
