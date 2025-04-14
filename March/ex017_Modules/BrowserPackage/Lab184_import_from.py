@@ -1,7 +1,7 @@
 
 
-from ex018_Modules.BrowserPackage.CloseBrowser import stop_browser
-from ex018_Modules.BrowserPackage.OpenBrowser import start_browser
+from ex017_Modules.BrowserPackage.CloseBrowser import stop_browser
+from ex017_Modules.BrowserPackage.OpenBrowser import start_browser
 
 
 
