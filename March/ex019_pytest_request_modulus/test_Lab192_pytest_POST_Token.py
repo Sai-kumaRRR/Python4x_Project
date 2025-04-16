@@ -1,10 +1,9 @@
-import pytest
-import allure
 import requests
 
 # pip install pytest allure requests
 
 # Create Token - POST
+
 base_url = "https://restful-booker.herokuapp.com"
 headers = {"Content-Type": "application/json"}
 
