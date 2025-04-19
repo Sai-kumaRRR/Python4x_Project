@@ -8,11 +8,10 @@ from selenium import webdriver
 def test_vwo_login():
     driver = webdriver.Chrome()
 
-
-     # 1) This code is translated into the API request
-     # 2) post request - browser driver(server)
-     # 3) where it will create a session or fresh copy browser
-     # 4)session id - 16 digit (dasasdctgrg) will be created
+    # 1) This code is translated into the API request
+    # 2) post request - browser driver(server)
+    # 3) where it will create a session or fresh copy browser
+    # 4)session id - 16 digit (dasasdctgrg) will be created
 
     driver.get("https://app.vwo.com")
     print(driver.session_id)
