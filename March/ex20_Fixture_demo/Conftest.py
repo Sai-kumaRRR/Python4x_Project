@@ -1,5 +1,4 @@
 import os
-
 import pytest
 import requests
 from dotenv import load_dotenv
@@ -57,3 +56,16 @@ def create_token():
     @pytest.fixture
     def read_url_testdata_excel():
         pass
+
+
+    @pytest.fixture
+    def launch_browser():
+        print("Lauching a Browser!! Chrome")
+        return "chrome"
+
+    @pytest.fixture
+    def close_browser():
+         print("Closing a Browser !! Chrome")
+    return "closed"
+
+

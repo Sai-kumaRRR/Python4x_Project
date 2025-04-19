@@ -1,4 +1,7 @@
-import requests
+import allure # pip install allure
+import pytest # pip install pytest
+import requests # pip install requests
+
 
 # pip install pytest allure requests
 
@@ -57,3 +60,39 @@ def test_put_request():
     base_path = "/booking/" + str(bookingid)
     full_url_put = base_url + base_path
     cookie = "token=" + token
+
+    headers = {
+        "Content-Type": "application/json",
+        "Cookie": cookie
+
+    }
+    json_payload = {
+        "firstname": "SAI",
+        "lastname":"Brown",
+        "totalprice": 111,
+        "depositpaid": True,
+        "bookingdates": {
+            "checkin": "2018-01-01",
+            "checkout": "2019-01-01"
+
+        },
+        "additionalneeds": "Breakfast"
+
+    }
+    response = requests.put(url=full_url_put, headers=headers, json=json_payload)
+    assert response.status_code == 200
+    assert response.json()["firstname"] == "SAI"
+
+
+    def test_delete():
+        URL = "https://restful-booker.herokuapp.com/booking/"
+        booking_id = get_booking_id()
+        DELETE_URL = URL + str(booking_id)
+        cookie_value = "token=" + get_token()
+        headers = {
+            "Content-Type": "application/json",
+            "Cookie": cookie_value
+
+        }
+        response = requests.delete(url=DELETE_URL, headers=headers)
+        assert response.status_code == 201

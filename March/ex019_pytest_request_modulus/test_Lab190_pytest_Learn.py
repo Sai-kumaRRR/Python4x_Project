@@ -1,5 +1,8 @@
-import allure
-import pytest
+import allure # pip install allure
+import pytest # pip install pytest
+import requests # pip install requests
+
+
 
 
 # pip install pytest allure requests
