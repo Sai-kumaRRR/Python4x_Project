@@ -14,7 +14,7 @@ from selenium.webdriver.support import expected_conditions as EC
 @allure.description("Verify that the app.vwo.com is loaded with waits")
 def test_negative_app_vwo_com():
     driver = webdriver.Chrome()
-    driver.get("https://app.vwo.com/#login")
+    driver.get("https://app.vwo.com/#/login")
 
     # driver.implicitly_wait(5) -> 0.01%
 
@@ -44,9 +44,9 @@ def test_negative_app_vwo_com():
     # data-qa="rixawitlomi">
     # your email,password, IP address or location did not match</div>
 
-     # time.sleep(5)  # python Int to wait for 5 seconds without any condition.
-    WebDriverWait(driver, timeout=3).until(EC.visibility_of_element_located(By.CLASS_NAME,"notification-box-description"))
-
+   # time.sleep(5)  # python Int to wait for 5 seconds without any condition.
+    WebDriverWait(driver, timeout=3).until(EC.visibility_of_element_located((By.CLASS_NAME,"notification-box-description")))
+    
     error_message_web_element = driver.find_element(By.CLASS_NAME, "notification-box-description")
     print(error_message_web_element.text)
     assert error_message_web_element.text == "Your email, password , IP address or location did not match"
