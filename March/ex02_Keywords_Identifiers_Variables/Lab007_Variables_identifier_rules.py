@@ -29,4 +29,4 @@ print(type(name))
 
 Complex_number = 2 + 3j
 print(Complex_number.real)
-print(Complex_number.imag)
+print(Complex_number.image)
