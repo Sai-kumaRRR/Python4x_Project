@@ -1,4 +1,5 @@
 import time
+import pytest
 
 import allure
 from selenium import webdriver
@@ -55,6 +56,7 @@ def test_alerts_prompt():
 
     alert = driver.switch_to.alert
     alert.send_keys("Sai")
+    alert.accept()
 
     result_text = driver.find_element(By.ID, "result").text
 
