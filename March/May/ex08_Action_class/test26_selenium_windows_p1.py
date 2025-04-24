@@ -9,14 +9,15 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains,ActionBuilder
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.actions.mouse_button import MouseButton
 
 
-@allure.title("Actions P2")
-@allure.description("Verify MouseBack")
-def test_verify_action_window():
+@allure.title("Actions P3")
+@allure.description("Verify click and hold")
+def test_verify_action_windows():
     # ChromeOptions - --incognio
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument(" --incognio")
+    chrome_options.add_argument("--incognito")
 
     driver = webdriver.Chrome(chrome_options)
     driver.get("https://the-internet.herokuapp.com/windows")
@@ -34,8 +35,11 @@ def test_verify_action_window():
     #['56rt87i934dh43276ugtu' , 'd3542t89uy7uui99']
 
     for handle in window_handles:
-        driver.switch_to.window(handle)
+        driver.switch_to.window(handle) #child
         if "New Window" in driver.page_source:
-            print("Test cased Passed")
+            print("Test cased Passed!")
             break
+
+            time.sleep(5)
+            driver.quit()
 
