@@ -1,8 +1,12 @@
 Web Automation Framework with POM in Python(Selenium)
 Tech Stack
+
 Python, PyTest
+
 Selenium
+
 Allure Report
+
 Gitignore, PyTest Report
 Page Object Model and Page Factory both
 Highlight element while run
